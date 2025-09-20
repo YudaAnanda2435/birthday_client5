@@ -47,6 +47,11 @@
         margin-bottom: 1rem;
       }
 
+      .falling-place,
+      .wiser-kinder {
+        font-size: 1.5rem;
+      }
+
       h2 {
         font-size: 1.8rem;
         margin-bottom: 1rem;
@@ -177,7 +182,7 @@
 
     <div class="page" id="page6">
       <img src="./assets/foto2.jpg" alt="Cute Love" />
-      <h1>
+      <h1 class="wiser-kinder">
         every year, you grow wiser, kinder, and even more amazing. I'm so
         proud of you sayang ♡
       </h1>
@@ -187,7 +192,7 @@
 
     <div class="page" id="page7">
       <img src="./assets/foto3.jpg" alt="Cute Love" />
-      <h1>
+      <h1 class="falling-place">
         You are my safe place, my joy, my love. May today bring you all the
         happiness you bring me. I love you bebe <span><3</span> 
       </h1>
@@ -216,7 +221,13 @@
       ></div>
     </div>
 
-    <audio id="bg-music" src="./music/rearrage-my-world.mp3" autoplay loop muted></audio>
+    <audio
+      id="bg-music"
+      src="./music/rearrage-my-world.mp3"
+      autoplay
+      loop
+      muted
+    ></audio>
 
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
@@ -235,7 +246,7 @@
           music.play().catch((e) => console.log("Autoplay blocked:", e));
 
           confetti({ particleCount: 150, spread: 100, origin: { y: 0.6 } });
-          typeText(fullLetter, document.getElementById("letterText"),40);
+          typeText(fullLetter, document.getElementById("letterText"), 40);
           startFallingSymbols();
         }
       }
